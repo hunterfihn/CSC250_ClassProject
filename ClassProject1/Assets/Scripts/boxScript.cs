@@ -24,6 +24,10 @@ public class boxScript : MonoBehaviour
             rb.velocity = Vector3.up * speed;
 
         }
+        else if (Input.GetKeyDown("b"))
+        {
+            rb.velocity = new Vector3(0, 0, 0);
+        }
         else if (Input.GetKeyDown("w"))
         {
             rb.velocity = Vector3.forward * speed;
