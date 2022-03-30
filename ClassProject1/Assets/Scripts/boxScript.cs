@@ -7,7 +7,7 @@ using UnityEngine;
 public class boxScript : MonoBehaviour
 {
     public Vector3 goUp, goForward, goBack, goLeft, goRight;
-    public float speed = 2.0f;
+    public float speed = 5.0f;
     private Rigidbody rb;
 
     // Start is called before the first frame update
@@ -24,25 +24,25 @@ public class boxScript : MonoBehaviour
             rb.velocity = Vector3.up * speed;
 
         }
-        else if (Input.GetKeyDown("b"))
+        else if (Input.GetKey("b"))
         {
             rb.velocity = new Vector3(0, 0, 0);
         }
-        else if (Input.GetKeyDown("w"))
+        else if (Input.GetKey("w"))
         {
             rb.velocity = Vector3.forward * speed;
 
         }
-        else if (Input.GetKeyDown("s"))
+        else if (Input.GetKey("s"))
         {
             rb.velocity = Vector3.back * speed;
 
         }
-        else if (Input.GetKeyDown("a"))
+        else if (Input.GetKey("a"))
         {
             rb.velocity = Vector3.left * speed;
         }
-        else if (Input.GetKeyDown("d"))
+        else if (Input.GetKey("d"))
         {
             rb.velocity = Vector3.right * speed;
         }
