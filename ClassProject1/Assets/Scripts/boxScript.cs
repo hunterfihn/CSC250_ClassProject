@@ -28,21 +28,21 @@ public class boxScript : MonoBehaviour
         {
             rb.velocity = new Vector3(0, 0, 0);
         }
-        else if (Input.GetKey("w"))
+        else if (Input.GetKey("s"))
         {
             rb.velocity = Vector3.forward * speed;
 
         }
-        else if (Input.GetKey("s"))
+        else if (Input.GetKey("w"))
         {
             rb.velocity = Vector3.back * speed;
 
         }
-        else if (Input.GetKey("a"))
+        else if (Input.GetKey("d"))
         {
             rb.velocity = Vector3.left * speed;
         }
-        else if (Input.GetKey("d"))
+        else if (Input.GetKey("a"))
         {
             rb.velocity = Vector3.right * speed;
         }
